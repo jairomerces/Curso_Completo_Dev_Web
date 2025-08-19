@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            //Escopo de variáveis - Função com parâmetro
+            //Parâmetro: valor total e número de dias
+            //Retorno: valor da diária formatado com duas casas decimais
+            //var bonus; // Variável global
+            function calcularDiaria(salario,dias, bonus) {
+                //bonus = 500; // Variável local, escopo da função
+                return (salario/dias+bonus).toFixed(2);    
+            }
+            var diaria = calcularDiaria (100000, 22,500); // Chamada da função
+            alert(diaria); // Exibe o resultado da função
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

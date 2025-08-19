@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aulas de Javascript</title>
+        <script>
+            var nome = "Javascript Fundamental";
+          /*  var primeira = nome.substr(0,5); //Quando se conhece o tamanho da palavra*/
+            var primeira = "";
+            var i = 0;
+            var letra = "";
+            
+            while (letra != " "){ //Quando não se sabe o tamanho da palavra
+                letra = nome.charAt(i);
+                primeira = nome.substr(0,i);
+                i++;
+            }
+
+            console.log(primeira);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

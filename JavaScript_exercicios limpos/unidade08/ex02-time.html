@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aulas de Javascript</title>
+    <script>
+      // Trabalhar com hora usando o objeto "Date" - Exemplo: var agora = new Date();
+      // agora.getHours() - retorna 12 horas,
+      // agora.getMinutes() - retorna de 0-59
+      // agora.getSeconds() - retorna de 0-59
+
+    /*  var agora = new Date();
+
+      function setDoisDigitos(tempo) {
+        if (tempo < 10) {
+          return "0" + tempo;
+        } else {
+          return tempo;
+        }
+      }
+
+      console.log(agora.getHours());
+      console.log(agora.getMinutes());
+      console.log(agora.getSeconds());
+
+      console.log(
+        setDoisDigitos(
+          agora.getHours() +
+            " : " +
+            agora.getMinutes() +
+            " : " +
+            agora.getSeconds()
+        )
+      );*/
+
+      function atualizarHora() {
+        const agora = new Date();
+        const hora = agora.toLocaleTimeString();
+        document.getElementById("relogio").textContent = hora;
+      }
+
+      setInterval(atualizarHora, 1000); // Atualiza a cada segundo (1000 milissegundos)
+    </script>
+  </head>
+  <body>
+    <div id="relogio"></div>   
+
+    </body>
+</html>

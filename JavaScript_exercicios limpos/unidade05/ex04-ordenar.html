@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aulas de Javascript</title>
+        <script>
+            function ordenarNumeros (a, b) {
+                return a - b;
+
+            }   
+            var megasena = [43, 10, 3, 1, 25, 30, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+            //Retornar apenas seis números
+            document.write("<p>Os números sorteados foram: " + megasena.slice(0, 6).join(", ") + "</p>");
+            megasena = megasena.slice(0, 6); // Limitar a seis números
+            megasena.sort(ordenarNumeros);
+            document.write("<p>Os números sorteados foram: " + megasena + "</p>");
+            document.write("<p>O menor número sorteado foi: " + megasena[0] + "</p>");
+            document.write("<p>O maior número sorteado foi: " + megasena[megasena.length - 1] + "</p>");
+            document.write("<p>Os números sorteados em ordem crescente: " + megasena.join(", ") + "</p>");
+            document.write("<p>Os números sorteados em ordem decrescente: " + megasena.slice().reverse().join(", ") + "</p>");
+            document.write("<p>Quantidade de números sorteados: " + megasena.length + "</p>"); 
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

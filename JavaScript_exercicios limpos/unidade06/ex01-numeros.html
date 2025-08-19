@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aulas de Javascript</title>
+        <script>
+            //Trabalhando com números
+            var x = 4;
+            var y = 3;
+            var z = x + y; // Soma
+            alert("Soma: " + z);
+
+           /* //Diferença entre números e strings
+            var str1 = "4";
+            var str2 = "3";
+            var strSum = str1 + str2; // Concatenação de strings
+            console.log("Concatenação de strings: " + strSum);*/ 
+            
+           /* z = x - y; // Subtração
+            console.log("Subtração: " + z);
+            z = x * y; // Multiplicação
+            console.log("Multiplicação: " + z);
+            z = x / y; // Divisão
+            console.log("Divisão: " + z);
+            z = x % y; // Módulo
+            console.log("Módulo: " + z);
+            z = x ** y; // Exponenciação
+            console.log("Exponenciação: " + z);
+            
+            // Trabalhando com números decimais
+            var a = 5.5;
+            var b = 2.2;
+            var c = a + b; // Soma
+            console.log("Soma de decimais: " + c);
+            c = a - b; // Subtração
+            console.log("Subtração de decimais: " + c);
+            c = a * b; // Multiplicação
+            console.log("Multiplicação de decimais: " + c);
+            c = a / b; // Divisão
+            console.log("Divisão de decimais: " + c);
+            c = a % b; // Módulo
+            console.log("Módulo de decimais: " + c);
+            c = a ** b; // Exponenciação
+            console.log("Exponenciação de decimais: " + c);
+            
+            // Trabalhando com números negativos
+            var d = -3;
+            var e = 2;
+            var f = d + e; // Soma
+            console.log("Soma com negativo: " + f);
+            f = d - e; // Subtração
+            console.log("Subtração com negativo: " + f);
+            f = d * e; // Multiplicação
+            console.log("Multiplicação com negativo: " + f);
+            f = d / e; // Divisão
+            console.log("Divisão com negativo: " + f);
+            f = d % e; // Módulo
+            console.log("Módulo com negativo: " + f);
+            f = d ** e; // Exponenciação
+            console.log("Exponenciação com negativo: " + f);
+            
+            // Trabalhando com NaN (Not a Number)
+            var g = "texto";
+            var h = 5;
+            var i = g * h; // Multiplicação com NaN
+            console.log("Resultado de NaN: " + i);
+            i = g + h; // Concatenação com NaN
+            console.log("Concatenação com NaN: " + i);
+            
+            // Trabalhando com Infinity
+            var j = 1 / 0; // Divisão por zero
+            console.log("Resultado de Infinity: " + j);
+            var k = -1 / 0; // Divisão por zero negativo
+            console.log("Resultado de -Infinity: " + k);
+            var l = 5 / 0; // Divisão por zero positivo
+            console.log("Resultado de Infinity positivo: " + l);
+            
+            // Verificando se um valor é um número
+            var m = 10;
+            var n = "texto";
+            console.log("É número (10): " + !isNaN(m)); // true
+            console.log("É número ('texto'): " + !isNaN(n)); // false
+            console.log("É número (Infinity): " + isFinite(j)); // false
+            console.log("É número (-Infinity): " + isFinite(k)); // false
+            console.log("É número (NaN): " + isNaN(i)); // true
+            
+            // Convertendo strings para números
+            var o = "123";
+            var p = parseInt(o); // Converte string para inteiro
+            console.log("String para inteiro: " + p);
+            var q = parseFloat(o); // Converte string para float
+            console.log("String para float: " + q);
+            
+            // Convertendo números para strings
+            var r = 456;
+            var s = r.toString(); // Converte número para string
+            console.log("Número para string: " + s);
+            
+            // Trabalhando com números aleatórios
+            var t = Math.random(); // Gera um número aleatório entre 0 e 1
+            console.log("Número aleatório: " + t);
+            var u = Math.floor(Math.random() * 100); // Gera um número aleatório entre 0 e 99
+            console.log("Número aleatório entre 0 e 99: " + u);
+            var v = Math.ceil(Math.random() * 100); // Gera um número aleatório entre 1 e 100
+            console.log("Número aleatório entre 1 e 100: " + v);
+            
+            // Arredondamento de números
+            var w = 5.6789;
+            var x1 = Math.round(w); // Arredonda para o inteiro mais próximo
+            console.log("Arredondamento: " + x1);
+            var y1 = Math.floor(w); // Arredonda para baixo
+            console.log("Arredondamento para baixo: " + y1);
+            var z1 = Math.ceil(w); // Arredonda para cima
+            console.log("Arredondamento para cima: " + z1);
+            
+            // Trabalhando com constantes matemáticas
+            console.log("Valor de PI: " + Math.PI); // Valor de PI
+            console.log("Valor de E: " + Math.E); // Valor de Euler
+            console.log("Raiz quadrada de 16: " + Math.sqrt(16)); // Raiz quadrada
+            console.log("Valor absoluto de -10: " + Math.abs(-10)); // Valor absoluto
+            
+            // Trabalhando com funções matemáticas
+            var angulo = 30; // Ângulo em graus
+            var radianos = angulo * (Math.PI / 180); // Converte graus para radianos
+            console.log("Seno de 30 graus: " + Math.sin(radianos)); // Seno
+            console.log("Cosseno de 30 graus: " + Math.cos(radianos)); // Cosseno
+            console.log("Tangente de 30 graus: " + Math.tan(radianos)); // Tangente
+            console.log("Arco seno de 0.5: " + Math.asin(0.5) * (180 / Math.PI) + " graus"); // Arco seno
+            console.log("Arco cosseno de 0.5: " + Math.acos(0.5) * (180 / Math.PI) + " graus"); // Arco cosseno
+            console.log("Arco tangente de 1: " + Math.atan(1) * (180 / Math.PI) + " graus"); // Arco tangente
+            
+            // Trabalhando com logaritmos
+            console.log("Logaritmo natural de 10: " + Math.log(10)); // Logaritmo natural
+            console.log("Logaritmo base 10 de 100: " + Math.log10(100)); // Logaritmo base 10
+            console.log("Logaritmo base 2 de 8: " + Math.log2(8)); // Logaritmo base 2
+            
+            // Trabalhando com exponenciais
+            console.log("Exponencial de 2: " + Math.exp(2)); // Exponencial
+            console.log("Exponencial de 3: " + Math.exp(3)); // Exponencial
+            console.log("Exponencial de 4: " + Math.exp(4)); // Exponencial
+            
+            // Trabalhando com arredondamento de números decimais
+            var decimal = 3.14159;
+            console.log("Arredondamento de 3.14159: " + decimal.toFixed(2)); // Arredonda para 2 casas decimais
+            console.log("Arredondamento de 3.14159: " + decimal.toFixed(3)); // Arredonda para 3 casas decimais
+            console.log("Arredondamento de 3.14159: " + decimal.toFixed(4)); // Arredonda para 4 casas decimais
+            
+            // Trabalhando com números grandes
+            var grande = 1e+6; // 1 milhão
+            console.log("Número grande: " + grande);
+            var muitoGrande = 1e+12; // 1 trilhão
+            console.log("Número muito grande: " + muitoGrande);
+            
+            // Trabalhando com números pequenos
+            var pequeno = 1e-6; // 0.000001
+            console.log("Número pequeno: " + pequeno);
+            var muitoPequeno = 1e-12; // 0.000000000001
+            console.log("Número muito pequeno: " + muitoPequeno);
+            
+            // Trabalhando com números hexadecimais
+            var hex = 0xFF; // 255 em decimal
+            console.log("Número hexadecimal (0xFF): " + hex);
+            var hex2 = 0x1A; // 26 em decimal
+            console.log("Número hexadecimal (0x1A): " + hex2);
+            
+            // Trabalhando com números binários
+            var bin = 0b1010; // 10 em decimal
+            console.log("Número binário (0b1010): " + bin);
+            var bin2 = 0b1111; // 15 em decimal
+            console.log("Número binário (0b1111): " + bin2);
+            
+            // Trabalhando com números octais
+            var oct = 0o10; // 8 em decimal
+            console.log("Número octal (0o10): " + oct);
+            var oct2 = 0o17; // 15 em decimal
+            console.log("Número octal (0o17): " + oct2);
+            
+            // Trabalhando com números complexos
+            // JavaScript não possui suporte nativo para números complexos, mas podemos simular
+            function Complex(real, imaginary) {
+                this.real = real;
+                this.imaginary = imaginary;
+            }*/
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

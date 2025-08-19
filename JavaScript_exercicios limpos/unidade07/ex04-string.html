@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aulas de Javascript</title>
+        <script>
+             var nome = "JAIRO MERCES";
+             console.log(nome.toUpperCase()); //"toUpperCase()" Transforma todas as letras em maiusculas 
+             console.log(nome.toLowerCase()); //"toLowerCase()" Transforma todas as letras em minusculas
+             
+             //Como converter a primeira letra do primeiro nome em maiuscula
+             var letras_minusculas = nome.toLowerCase();
+             var primeira = letras_minusculas.charAt(0).toUpperCase();
+             var primeiro_nome = primeira + letras_minusculas.substr(1, letras_minusculas.length);
+
+             console.log(primeiro_nome.split(" ")[0]);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

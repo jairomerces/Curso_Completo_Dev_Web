@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aulas de Javascript</title>
+    <script>
+      // Inserindo e excluindo elementos no array
+      var salada = ["Uva", "Banana", "Pera"];
+      //inserindo no final
+      salada.push("Maçã");
+      alert(salada);
+      alert("Número de elementos : " + salada.length); // Mostra o tamanho do array
+      //inserindo no início
+      salada.unshift("Laranja");
+      alert(salada);
+      alert("Número de elementos : " + salada.length); // Mostra o tamanho do array
+      //excluindo do final
+      salada.pop();
+      alert(salada);
+      alert("Número de elementos : " + salada.length); // Mostra o tamanho do array
+      //excluindo do início
+      salada.shift();
+      alert(salada);
+      alert("Número de elementos : " + salada.length); // Mostra o tamanho do array
+      //excluindo do meio
+      salada.splice(1, 1); // remove 1 elemento a partir do índice 1
+      alert(salada);
+      alert("Número de elementos : " + salada.length); // Mostra o tamanho do array
+    </script>
+  </head>
+  <body></body>
+</html>

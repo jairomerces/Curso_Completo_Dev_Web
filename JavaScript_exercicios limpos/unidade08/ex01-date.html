@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aulas de Javascript</title>
+    <script>
+      // Objeto "Date" - Exemplo: var agora = new Date();
+      // agora.getFullYear() - retorna o ano,
+      // agora.getMonth() - retorna o mês, sendo de 0-11 (Sendo 0 janeiro e 11 dezembro)
+      // agora.getDate() - retorna a data, de 1-31
+      // agora.getDay() - retorna os dias da semana, sendo de 0-6
+
+      var agora = new Date();
+      var meses = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro",
+      ];
+      var dias_semana = [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado",
+      ];
+
+      console.log(dias_semana[agora.getDay()]);
+      console.log(agora.getDate());
+      console.log(meses[agora.getMonth()]);
+      console.log(agora.getFullYear());
+
+      console.log(
+        "Hoje é " +
+          dias_semana[agora.getDay()] +
+          " " +
+          agora.getDate() +
+          " de " +
+          meses[agora.getMonth()] +
+          " de " +
+          agora.getFullYear()
+      );
+
+      var aniversario = new Date(1990, 4, 15); // 15 de Maio de 1990 (mês começa do 0)
+      console.log(
+        "Meu aniversário é " +
+          dias_semana[aniversario.getDay()] +
+          ", " +
+          aniversario.getDate() +
+          " de " +
+          meses[aniversario.getMonth()] +
+          " de " +
+          aniversario.getFullYear()
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

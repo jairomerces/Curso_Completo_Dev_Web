@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aulas de Javascript</title>
+    <script>
+      // loops em JavaScript
+      // Este exemplo demonstra o uso de loops para iterar sobre números
+      // e exibir mensagens no console.
+      for (var i = 0; i < 5; i++) {
+        alert("Número atual: " + i);
+      }
+      // Exemplo de loop while
+      var j = 0;
+      while (j < 5) {
+        alert("Número atual no while: " + j);
+        j++;
+      }
+      // Exemplo de loop do-while
+      var k = 0;
+      do {
+        alert("Número atual no do-while: " + k);
+        k++;
+      } while (k < 5);
+      // Exemplo de loop for...in para iterar sobre propriedades de um objeto
+      var pessoa = { nome: "João", idade: 30, cidade: "São Paulo" };
+      for (var prop in pessoa) {
+        alert(prop + ": " + pessoa[prop]);
+      }
+      // Exemplo de loop for...of para iterar sobre elementos de um array
+      var frutas = ["maçã", "banana", "laranja"];
+      for (var fruta of frutas) {
+        alert("Fruta: " + fruta);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
